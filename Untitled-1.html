@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://github.com/koushik383/Portfolio-Website/blob/main/iconimage.png">
+    <script src="https://kit.fontawesome.com/0862574793.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://github.com/koushik383/Portfolio-Website/blob/main/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Durga Sai Koushik Matta</span></h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="https://github.com/koushik383/Portfolio-Website/blob/main/profileimage.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> I am Durga Sai Koushik, a Computer Science Engineering Graduate student with an enthusiasm to become a software engineer and an eagerness where seeking a position to utilize my skills and contribute to the best of my efforts to help the company grow and attain success. I want a role that helps me realize my potential by allowing me to explain different aspects of the industry..</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Edcation</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span></li>
+                                <li><span>Java</span></li>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>06/2024 - 07/2024</span><br>AIML Internship</li>
+                                <li><span>03/2025 - 04/2025</span><br>Web Development Internship</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - 2025</span><br>B.Tech in Computer Science and Engineering at Pace Institute of Technology and Sciences</li>
+                                <li><span>2019 - 2021</span><br>Intermediate in MPC at Umamaheswara Junior College</li>
+                                <li><span>2018 - 2019</span><br>10th(SSC) at Sri Chaitanya Techno School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    
+                    <div class="layer">
+                        <h3>Currency Coverter</h3>
+                        <p>A currency converter is a tool that converts one currency’s value or quantity into the relative values or amounts of other currencies</p>
+                        <a href="https://koushik383.github.io/Currency-Converter/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="layer">
+                        <h3>Tempature Monitoring</h3>
+                        <p>It focuses on the real time monitoring, analysis and visualization of temperature data using IoT enabled sensors and a web based dashboard.</p>
+                        <a href="https://project-beta-khaki.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    </div>
+    <!-- Certifications-->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="certs-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Python - HackerRank</h2>
+                    <a href="https://drive.google.com/file/d/1sZ6C3g1kNw2617bzX5DZ7VGB5OFkaTMy/view?usp=drive_link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java - Spoken Tutorial</h2>
+                    <a href="https://drive.google.com/file/d/1srCpkUSqeqOdXe7nN3TpUDRU3iqp5ypV/view?usp=drive_link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Responsive Web Development with HTML5, CSS3, JavaScript - Infosys Springboard</h2>
+                    <a href="https://drive.google.com/file/d/1uJHWx04c68XehuFnXWZdPDAA2vGYjD_R/view?usp=drive_link"><i class="fa-solid fa-up-right-from-square"></i></a> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> durgasaikoushikmatta@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9676173614</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/durga-sai-koushik-matta-753883281"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/koushik383"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1s6ycS7MLeFRxdMSleKzjhfPPE9PXhie_/view?usp=drive_link" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2025 Durga Sai Koushik Matta</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
